@@ -1,597 +1,315 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/Ernesto.png" alt="">
-                </div>
-            </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Ernesto Marrero Gámez</span>
-                    <h3> Cloud Engineer | DevOps Engineer</h3> 
-                </h1>
-                <p>
-                    Analytical, and service oriented. with a solid technical base, a teamworker, with great ability to adapt.
-                    Responsible, proactive. Capable of generating ideas and solutions that add value to the institution and my peers.
-                    Cloud Services Evangelist.
-                </p>
-                <div class="btn-con">
-                    <a href="https://public.dm.files.1drv.com/y4m9RbhJS2Z31ef88z97CbYk66T5fo6EBwW72welNmZH_iMPfeLjG6OFYSDXDR7niVFr9u6AR_R278MTacJSP-97CUsviisiecBP6nt9gOSxfMF7OSB0GzzNne4ooX4Y_tM3ngFZSD34y7d-kGjAL7OZf6x_6yo23UfekJyHTR3CJx8jfPZsT3geOT3z68xs90qI4cZcI3VL4Z8Psi_LboNduri33XboXtizB0F3xgT7CA" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
-            </div>
-        </div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portafolio de Ernesto Isaac Marrero Gámez, SRE, DevOps y Cloud Engineer especializado en Azure, Microsoft 365, CI/CD e infraestructura cloud."
+    >
+    <title>Ernesto Isaac Marrero Gámez | SRE, DevOps & Cloud Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">E</span>
+        <span>Ernesto Marrero</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
+
     <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+      <section class="hero" id="inicio" aria-label="Presentación">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Santiago, Chile · Inglés C1</p>
+          <h1>Ernesto Isaac Marrero Gámez</h1>
+          <p class="hero-role">SRE · DevOps · Cloud Engineer</p>
+          <p class="hero-copy">
+            Especialista en optimización de procesos con soluciones cloud, automatización e infraestructura segura y escalable.
+            He trabajado con Azure, Microsoft 365, CI/CD e infraestructura crítica para clientes empresariales en Latinoamérica.
+          </p>
+
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button primary" href="assets/CV_ErnestoIsaacMarreroGamez_English.pdf" target="_blank" rel="noreferrer">
+              Descargar CV
+            </a>
+            <a class="button secondary" href="mailto:ernestomarrero@outlook.cl">Contactar</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="proof-strip" aria-label="Logros destacados">
+        <article>
+          <span>+US$50k</span>
+          <p>ahorrados en migración a Azure</p>
+        </article>
+        <article>
+          <span>3h a 15m</span>
+          <p>en creación automatizada de tenants</p>
+        </article>
+        <article>
+          <span>LATAM</span>
+          <p>proyectos con equipos Microsoft y clientes enterprise</p>
+        </article>
+      </section>
+
+      <section class="section intro-section" aria-label="Resumen profesional">
+        <div class="section-kicker">Perfil</div>
+        <div class="intro-grid">
+          <h2>Infraestructura cloud con foco operativo, seguridad y automatización.</h2>
+          <p>
+            Mi trabajo conecta consultoría, operación y delivery técnico: resuelvo incidentes, documento procesos,
+            diseño pipelines, administro plataformas Microsoft y transformo tareas repetitivas en flujos confiables.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Trayectoria</div>
+            <h2>Experiencia profesional</h2>
+          </div>
+          <p>Roles recientes en DevOps, cloud, infraestructura y soporte especializado.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2024 - 2025</div>
+            <div class="timeline-card">
+              <div class="job-head">
+                <div>
+                  <h3>Solution Consultant · DevOps Engineer</h3>
+                  <p>Arkano Software · Santiago, Chile</p>
+                </div>
+                <span>DevOps</span>
+              </div>
+              <ul>
+                <li>Soporte técnico y resolución de problemas en infraestructura de clientes.</li>
+                <li>Colaboración con equipos multidisciplinarios y engineers de Microsoft en proyectos estratégicos.</li>
+                <li>Creación de pipelines CI/CD para infraestructura como código y despliegues de aplicaciones Azure AI.</li>
+                <li>Mejora de seguridad, eficiencia operativa y documentación de incidentes y soluciones.</li>
+              </ul>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>
-                        I started my experience as IT service desk support for Point of Sales at Adexus.
-                        At 2018 i started a new job on the OTIC CCHC as IT Support Analyst,
-                        with the time i was proyected to Infrastructure after the execution of 2 
-                        migrations of Mail servers ending on Office 365 service and i was the admintrator <br /> <br /> 
-                        In 2020 I started working in a Uruguayan Microsoft Partner company as a Cloud Engineer, where I 
-                        learned about the Azure cloud and was certified as an Azure Administrator, with projections of becoming a DevOps Engineer.
-                        I am currently preparing to take the <a href="https://learn.microsoft.com/en-us/certifications/devops-engineer/" 
-                        title="Microsoft DevOps" target="_blank"><u>DevOps Engineer Expert exam.</u> </a> 
-                    </p>
-                    <div class="btn-con">
-                        <a href="https://public.dm.files.1drv.com/y4m9RbhJS2Z31ef88z97CbYk66T5fo6EBwW72welNmZH_iMPfeLjG6OFYSDXDR7niVFr9u6AR_R278MTacJSP-97CUsviisiecBP6nt9gOSxfMF7OSB0GzzNne4ooX4Y_tM3ngFZSD34y7d-kGjAL7OZf6x_6yo23UfekJyHTR3CJx8jfPZsT3geOT3z68xs90qI4cZcI3VL4Z8Psi_LboNduri33XboXtizB0F3xgT7CA" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-card">
+              <div class="job-head">
+                <div>
+                  <h3>Cloud Infrastructure Engineer</h3>
+                  <p>Codify Analytics · Santiago, Chile</p>
                 </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">6+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">1500+</p>
-                            <p class="small-text">Migrated <br /> Users to Microsoft 365</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Cibersecurity <br /> talks</p>
-                        </div>
-                    </div>
-                </div>
+                <span>Azure</span>
+              </div>
+              <ul>
+                <li>Migración de infraestructura on-premises a Azure con ahorro acumulado superior a US$50.000.</li>
+                <li>Automatización de creación de tenants, reduciendo el proceso de 3 horas a 15 minutos.</li>
+                <li>Automatización con Python para leer datos desde Excel e insertarlos en base de datos.</li>
+                <li>Migración de contenedores Docker en VMs a Azure Container Instances y MariaDB 10.3.39 a MySQL 8.0.</li>
+              </ul>
             </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Azure</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="azure"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Microsoft 365</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="microsoft"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Linux</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="linux"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Docker</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="docker"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Kubernetes</p>
-                        <div class="progress-con">
-                            <p class="prog-text">65%</p>
-                            <div class="progress">
-                                <span class="Kubernetes"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Virtualization</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="virtualization"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Networking</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="networking"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Process documentation</p>
-                        <div class="progress-con">
-                            <p class="prog-text">100%</p>
-                            <div class="progress">
-                                <span class="documentation"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Communication Skills</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="communication"></span>
-                            </div>
-                        </div>
-                    </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-card">
+              <div class="job-head">
+                <div>
+                  <h3>Technical Account Manager</h3>
+                  <p>XMS, Microsoft Gold Partner · Santiago, Chile</p>
                 </div>
+                <span>Microsoft</span>
+              </div>
+              <ul>
+                <li>Gestión de soluciones Azure, soporte a clientes y coordinación de customer support engineers.</li>
+                <li>Automatización de cambios de atributos en miles de blobs con scripts de Azure PowerShell.</li>
+                <li>Migración de Azure Database for PostgreSQL Single Server a Flexible Server.</li>
+              </ul>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">5-sep-2022 to 5-jan-2023</p>
-                    <h5>Technical Account Manager<span> - XMS (Microsoft Gold Partner)</span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Automate through an Azure PowerShell script the change of attributes in thousands of blob files stored in thousands of blob storage.
-                         Migration of Azure Database for PostgreSQL Single Servers to Flexible servers from version 10 to version 14.
-                    </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2021 - 2022</div>
+            <div class="timeline-card">
+              <div class="job-head">
+                <div>
+                  <h3>Solution Consultant · Cloud Engineer</h3>
+                  <p>Arkano Software, Microsoft Gold Partner · Santiago, Chile</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">12-jul-2021 to 1-sep-2022</p>
-                    <h5>Cloud Engineer<span> - Arkano Software (Microsoft Gold Partner)</span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Increase knowledge in Microsoft Cloud technologies, participation in internal projects and with clients at a national and international level 
-                        (Chile, Peru, Argentina, Paraguay, Uruguay, Bolivia, Colombia and Mexico, United States), Discovery of existing Azure resources, execution of
-                         governance plan and cost reduction in the consumption of subscriptions.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">1-mar-2020 to 30-jun-202</p>
-                    <h5>IT infrastructure analyst<span> - OTIC CChC </span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Creation of documentation of processes not established due to the newness of the area. Effectively lead
-                         Cpanel and Postfix email system migration projects to Microsoft 365, optimizing domain management, improving the availability
-                          and accessibility of information to users nationwide, apply internal training in the use of the Microsoft 365 Suite , 
-                          developing better methodologies for collaboration and communication between them. Migration of services between Tenants of 
-                          Microsoft 365.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">10-oct-2020 to 1-mar-2020</p>
-                    <h5>IT Support Analyst<span> - OTIC CChC </span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Regularization of requirements management, streamlining of processes in management of these, 
-                        documentation of existing processes, creation of new processes, including flow of user registrations and cancellations, 
-                        improvement in response times for incidents and requirements, automation of sub-management communications of systems to
-                         other areas at the national level, effective execution of technological renewal at the national level through Lenovo 
-                         leasing, improving the work experience of users with the use of high-end computers, which allowed saving money on purchases
-                          of new equipment, Windows 10 licenses that would be devalued eventually and possible purchase of parts in case of failure.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">10-nov-2017 to 31-jul-2018</p>
-                    <h5>N2 Helpdesk Agent<span> - Adexus </span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Regularization of requirements management, streamlining of processes in their management,
-                         documentation of existing processes, creation of new processes, improvement in response times to field technicians
-                          and client agencies, standardization of information traffic between the Commercial and Operations Areas, proposals
-                           for improvement in the coordination between Adexus and Servipag for effective compliance with the SLA.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">3-dec-2013 to 15-nov-2016</p>
-                    <h5>Helpdesk Assistant<span> - CYLAM C.A</span></h5>
-                    <p>
-                        <b>ACHIEVEMENTS:</b> Successful assistance to Users. Recommendations for the optimization of tasks with the use of the computer.
-                    </p>
-                </div>
+                <span>Cloud</span>
+              </div>
+              <ul>
+                <li>Administración global de Azure, Microsoft 365 y Azure DevOps.</li>
+                <li>Gobernanza, control de costos, discovery de recursos y definición de arquitecturas cloud.</li>
+                <li>Gestión de activos tecnológicos en Chile, Perú, Argentina, Paraguay, Uruguay, Colombia y México.</li>
+              </ul>
             </div>
-        </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2020 - 2021</div>
+            <div class="timeline-card">
+              <div class="job-head">
+                <div>
+                  <h3>IT Infrastructure Analyst</h3>
+                  <p>OTIC CChC · Santiago, Chile</p>
+                </div>
+                <span>Infra</span>
+              </div>
+              <ul>
+                <li>Administración de Microsoft 365, Fortinet, Ubiquiti, VMware, Nutanix y respaldos Veeam.</li>
+                <li>Monitoreo con PRTG, soporte a usuarios críticos y resolución de tickets nivel 3.</li>
+                <li>Operación de redes Layer 2 y Layer 3 según requerimientos de la organización.</li>
+              </ul>
             </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>This Portfolio!</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ernestomarrero8/ernestomarrero8.github.io" title="Github Portfolio" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="habilidades">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Stack</div>
+            <h2>Habilidades técnicas</h2>
+          </div>
+          <p>Un perfil orientado a plataforma, operación, automatización y seguridad.</p>
+        </div>
+
+        <div class="skill-groups">
+          <article>
+            <h3>Cloud & Plataforma</h3>
+            <div class="tags">
+              <span>Azure</span>
+              <span>Microsoft 365</span>
+              <span>Windows Server</span>
+              <span>Linux</span>
+              <span>Networking</span>
+              <span>Seguridad de la información</span>
             </div>
-        </section>
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-                </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : Santiago, Chile
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: ernestomarrero@outlook.cl</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: Professional Institute AIEP, Chile | Computer Engineering </span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: +56 9 4869 7308</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: English, Spanish</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://www.linkedin.com/in/ernesto-marrero-gamez-/" title="LinkedIn" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://twitter.com/UnInconformeMas" title="Twitter" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://github.com/ernestomarrero8" title="GitHub" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="https://public.dm.files.1drv.com/y4m9RbhJS2Z31ef88z97CbYk66T5fo6EBwW72welNmZH_iMPfeLjG6OFYSDXDR7niVFr9u6AR_R278MTacJSP-97CUsviisiecBP6nt9gOSxfMF7OSB0GzzNne4ooX4Y_tM3ngFZSD34y7d-kGjAL7OZf6x_6yo23UfekJyHTR3CJx8jfPZsT3geOT3z68xs90qI4cZcI3VL4Z8Psi_LboNduri33XboXtizB0F3xgT7CA" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+          </article>
+          <article>
+            <h3>DevOps & Automatización</h3>
+            <div class="tags">
+              <span>DevOps</span>
+              <span>CI/CD</span>
+              <span>Azure DevOps</span>
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>Git</span>
             </div>
-        </section>
+          </article>
+          <article>
+            <h3>Scripting & Datos</h3>
+            <div class="tags">
+              <span>Python</span>
+              <span>Bash</span>
+              <span>PowerShell</span>
+              <span>SQL</span>
+              <span>Project Management</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credential-grid" id="certificaciones">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Formación</div>
+            <h2>Certificaciones y educación</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="credential-card highlight">
+            <span>Microsoft · 2024</span>
+            <h3>Azure Solutions Architect Expert</h3>
+          </article>
+          <article class="credential-card">
+            <span>Microsoft · 2023</span>
+            <h3>DevOps Engineer Expert</h3>
+          </article>
+          <article class="credential-card">
+            <span>Microsoft · 2022</span>
+            <h3>Azure Administrator Associate</h3>
+          </article>
+          <article class="credential-card">
+            <span>EF SET · 2023</span>
+            <h3>English Certificate C1 Advanced</h3>
+          </article>
+        </div>
+
+        <div class="education">
+          <article>
+            <h3>Computer Engineering and Informatics</h3>
+            <p>Universidad Andrés Bello · 2024 - en progreso</p>
+          </article>
+          <article>
+            <h3>Systems Programming and Analysis Technician</h3>
+            <p>Instituto AIEP · 2022 - 2024</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto">
+        <div>
+          <div class="section-kicker">Contacto</div>
+          <h2>Disponible para roles y proyectos cloud, DevOps y SRE.</h2>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:ernestomarrero@outlook.cl">ernestomarrero@outlook.cl</a>
+          <a href="tel:+56948697308">+56 9 4869 7308</a>
+          <a
+            class="contact-social"
+            href="https://api.whatsapp.com/send/?phone=56948697308&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Escribir a Ernesto por WhatsApp"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.52 3.48A11.87 11.87 0 0 0 12.04 0C5.45 0 .08 5.36.08 11.95c0 2.1.55 4.15 1.6 5.96L0 24l6.24-1.64a11.95 11.95 0 0 0 5.8 1.48h.01c6.59 0 11.95-5.36 11.95-11.95 0-3.19-1.24-6.19-3.48-8.41ZM12.05 21.82h-.01a9.92 9.92 0 0 1-5.05-1.38l-.36-.21-3.7.97.99-3.61-.23-.37a9.9 9.9 0 0 1-1.51-5.27c0-5.47 4.45-9.92 9.93-9.92 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.9 7.01c0 5.47-4.45 9.87-9.97 9.87Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a
+            class="contact-social"
+            href="https://www.linkedin.com/in/ernesto-marrero-gamez-/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ver perfil de Ernesto en LinkedIn"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47ZM22.23 0H1.76C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.76 24h20.47c.97 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0Z" />
+            </svg>
+            LinkedIn
+          </a>
+          <span>Santiago, Chile</span>
+        </div>
+      </section>
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
-</body>
+    <footer class="site-footer">
+      <p>© <span data-year></span> Ernesto Isaac Marrero Gámez</p>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
